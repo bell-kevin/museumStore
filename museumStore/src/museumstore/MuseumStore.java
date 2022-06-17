@@ -15,7 +15,7 @@ class MuseumStore {
 
     public void sell(int quantity) {
         System.out.printf("\nSell %d of %s\n", quantity, this.item);
-        if (quantity <= this.quantity) //check inventory for adequate amount
+        if (quantity <= this.quantity)
         {
             System.out.printf("Sold %d %s, cost $%.2f\n",
                     quantity, this.item, this.price * quantity);
